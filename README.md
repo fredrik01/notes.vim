@@ -10,8 +10,11 @@ Super simple plugin to manage notes in plain text. Inspired by https://github.co
 	" New file with todays date as filename (.md)
 	:NotesDaily
 
-	" Search notes
+	" Search in notes
 	:NotesSearch
+
+	" Search for files in notes folder
+	:NotesFiles
 
 ## Settings
 

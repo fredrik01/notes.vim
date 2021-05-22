@@ -27,3 +27,5 @@ command! NotesDaily :execute 'edit '.s:path.'/'.strftime("%F").s:notes_daily_ext
 command! -bang -nargs=* NotesSearch
       \ call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1,
       \ fzf#vim#with_preview({'dir': s:path}), <bang>1)
+
+command! NotesFiles :execute 'Files! '.s:path
